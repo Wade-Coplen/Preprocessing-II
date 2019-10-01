@@ -9,22 +9,23 @@
 .responsive-width() {
     height: auto;
 }
-.nav-links-font() {
+.nav-links-font(@color) {
+    color: @color;
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
     padding: 5px;
     
     
 }
-.button-signmeup {
-  background-color: rgb(24, 139, 134); /* Green */
+.button-signmeup(@background-color, @color, @font-size) {
+  background-color:@background-color;
   border: none;
-  color: white;
+  color: @color;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;  
+  font-size: @font-size;
   border-radius: 12px;
   
 
